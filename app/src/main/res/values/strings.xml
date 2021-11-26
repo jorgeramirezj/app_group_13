@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">MobileCourse</string>
+    <!-- Login -->
+    <string name="text_Username">Username</string>
+    <string name="txt_hint_username">e-mail@domain.com</string>
+    <string name="txt_Password">Password</string>
+    <string name="txt_hint_password">your password</string>
+    <string name="txt_BUTTON">LOGIN</string>
+    <!-- OK -->
+    <string name="txt_WELCOME">WELCOME!</string>
+    <string name="txt_User_two_points">User: </string>
+    <!-- ERROR -->
+    <string name="txt_ERROR">ERROR!</string>
+    <string name="txt_invalid_login">Invalid username or password</string>
+
+    <string name="txt_OK">OK</string>
+    <string name="txt_CANCEL">CANCELA</string>
+
+    <!-- WelcomeActivity -->
+    <string name="txt_Welcome">Welcome</string>
+    <string name="txt_Intro">Introduction</string>
+    <string name="txt_lorem_ipsum_1">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    </string>
+    <string name="txt_Class_1">Class 1</string>
+    <string name="txt_lorem_ipsum_2">
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.
+    </string>
+
+    <!-- NavBar -->
+    <string name="appbar_txt_action_Search">Search</string>
+    <string name="appbar_txt_action_Settings">Settings</string>
+    <string name="appbar_txt_action_Logout">Logout</string>
+
+    <string name="txt_tarea_1">Go to the supermarket</string>
+    <string name="txt_hora_1">10:00</string>
+    <string name="txt_lugar_1">"kwik-mart"</string>
+    <string name="txt_tarea_2">Take car to maintenance</string>
+    <string name="txt_hora_2">14:00</string>
+    <string name="txt_lugar_2">Taller</string>
+    <string name="txt_tarea_3">Go to the laundry</string>
+    <string name="txt_hora_3">20:00</string>
+    <string name="txt_lugar_3">Laundrymart</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout-land/activity_main.xml" value="0.42484248424842486" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout-sw480dp-land/activity_main.xml" value="0.427536231884058" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout-sw480dp/activity_main.xml" value="0.88" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout-sw600dp-land/activity_main.xml" value="0.4244604316546763" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout-sw600dp/activity_main.xml" value="0.6875" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout-sw600dp/activity_welcome.xml" value="0.275" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout-sw720dp-land/activity_main.xml" value="0.4244604316546763" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout-sw720dp/activity_main.xml" value="0.275" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout/activity_to_do.xml" value="0.27447916666666666" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout/activity_welcome.xml" value="0.36666666666666664" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout/fragment_detail.xml" value="0.27447916666666666" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout/fragment_to_do.xml" value="0.27447916666666666" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/menu/menu_main_activity.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
