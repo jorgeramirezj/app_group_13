@@ -36,6 +36,8 @@ class MainActivity : AppCompatActivity() {
                     R.string.appbar_txt_action_Search,
                     Toast.LENGTH_LONG
                 ).show()
+                val intento = Intent(this, DrawerActivity::class.java)
+                startActivity(intento)
                 return true
             }
             R.id.accion_configurar -> {
