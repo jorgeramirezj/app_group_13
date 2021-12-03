@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.RecyclerView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -36,10 +38,10 @@ class ToDoFragment : Fragment() {
     ): View? {
         val fragmento : View = inflater.inflate(R.layout.fragment_to_do, container, false)
 
+        // Utilizado en el To-Do Fragment (lista estatica)
         val detail1 : Button = fragmento.findViewById(R.id.btn_detail_1)
         val detail2 : Button = fragmento.findViewById(R.id.btn_detail_2)
         val detail3 : Button = fragmento.findViewById(R.id.btn_detail_3)
-
         detail1.setOnClickListener{ it ->
             val datos = Bundle()
             datos.putString("tarea", resources.getString(R.string.txt_tarea_1))
@@ -68,7 +70,7 @@ class ToDoFragment : Fragment() {
             datos.putString("hora", resources.getString(R.string.txt_hora_3))
             datos.putString("lugar", resources.getString(R.string.txt_lugar_3))
             activity?.supportFragmentManager?.beginTransaction()
-                ?.replace(R.id.my_fragment_container_view, DetailFragment::class.java, datos, "detail")
+                ?.replace(R.id.my_fragment_container_view,  DetailFragment::class.java, datos, "detail")
                 ?.addToBackStack("")
                 ?.commit()
         }

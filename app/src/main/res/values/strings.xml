@@ -54,8 +54,27 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_to_do_recycler">To Do - Recycler</string>
     <string name="menu_to_do">To Do</string>
     <string name="menu_about">About</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="menu_detail">Detail</string>
+    <string name="menu_new_task">New Task</string>
     <string name="txt_Developed_by">Developed by\nJorge Alberto</string>
+
+    <string name="txt_task">Task</string>
+    <string name="txt_time">Time</string>
+    <string name="txt_place">Place</string>
+    <string name="txt_save">SAVE</string>
+
+    <string name="txt_select">Select</string>
+    <string name="txt_study">Study</string>
+    <string name="txt_shopping">Shopping</string>
+    <string name="txt_to_do_exercise">To do exercise</string>
+
+    <string-array name="activitys">
+        <item>Select</item>
+        <item>Study</item>
+        <item>Shopping</item>
+        <item>To do exercise</item>
+    </string-array>
 </resources>

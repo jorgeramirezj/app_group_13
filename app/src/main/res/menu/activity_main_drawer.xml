@@ -4,7 +4,7 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
-        <item
+        <!--<item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_home" />
@@ -15,7 +15,15 @@
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:title="@string/menu_slideshow" />-->
+        <item
+            android:id="@+id/nav_todo_recycler"
+            android:icon="@android:drawable/sym_contact_card"
+            android:title="@string/menu_to_do_recycler" />
+        <item
+            android:id="@+id/nav_new_task"
+            android:icon="@android:drawable/ic_input_add"
+            android:title="@string/menu_new_task" />
         <item
             android:id="@+id/nav_todo"
             android:icon="@android:drawable/ic_menu_agenda"

@@ -11,12 +11,27 @@
         <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout-sw600dp/activity_welcome.xml" value="0.275" />
         <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout-sw720dp-land/activity_main.xml" value="0.4244604316546763" />
         <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout-sw720dp/activity_main.xml" value="0.275" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout/activity_drawer.xml" value="0.27447916666666666" />
         <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout/activity_to_do.xml" value="0.27447916666666666" />
         <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout/activity_welcome.xml" value="0.36666666666666664" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout/app_bar_drawer.xml" value="0.27447916666666666" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout/content_drawer.xml" value="0.20520833333333333" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout/fragment_about.xml" value="0.27447916666666666" />
         <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout/fragment_detail.xml" value="0.27447916666666666" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout/fragment_gallery.xml" value="0.27447916666666666" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout/fragment_recycler_to_do.xml" value="0.36666666666666664" />
         <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout/fragment_to_do.xml" value="0.27447916666666666" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout/nav_header_drawer.xml" value="0.27447916666666666" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/layout/task_list_items.xml" value="0.36666666666666664" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/menu/activity_main_drawer.xml" value="0.27447916666666666" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/menu/drawer.xml" value="0.27447916666666666" />
         <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/AppGroup13/app/src/main/res/menu/menu_main_activity.xml" value="0.36666666666666664" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/MinTic/AppGroup13/app/src/main/res/layout/fragment_detail.xml" value="0.36666666666666664" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/MinTic/AppGroup13/app/src/main/res/layout/fragment_gallery.xml" value="0.36666666666666664" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/MinTic/AppGroup13/app/src/main/res/layout/fragment_new_task.xml" value="0.36666666666666664" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/MinTic/AppGroup13/app/src/main/res/layout/fragment_recycler_to_do.xml" value="0.36666666666666664" />
+        <entry key="..\:/JORGERAMIREZ/DEV/DEV/AndroidStudio/MinTic/AppGroup13/app/src/main/res/menu/activity_main_drawer.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

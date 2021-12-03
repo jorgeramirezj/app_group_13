@@ -3,33 +3,39 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@id/nav_todo_recycler">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.mintic.ciclo4.appgroup13.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
-
-    <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.mintic.ciclo4.appgroup13.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.mintic.ciclo4.appgroup13.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_todo_recycler"
+        android:name="com.mintic.ciclo4.appgroup13.RecyclerToDoFragment"
+        android:label="@string/menu_to_do_recycler"
+        tools:layout="@layout/fragment_recycler_to_do" >
+        <action
+            android:id="@+id/action_nav_todo_recycler_to_nav_detail"
+            app:destination="@id/nav_detail" />
+    </fragment>
     <fragment
         android:id="@+id/nav_todo"
         android:name="com.mintic.ciclo4.appgroup13.ToDoFragment"
         android:label="@string/menu_to_do"
-        tools:layout="@layout/fragment_to_do" />
+        tools:layout="@layout/fragment_to_do" >
+        <action
+            android:id="@+id/action_nav_todo_to_nav_detail"
+            app:destination="@id/nav_detail" />
+    </fragment>
     <fragment
         android:id="@+id/nav_about"
         android:name="com.mintic.ciclo4.appgroup13.AboutFragment"
         android:label="@string/menu_about"
         tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/nav_detail"
+        android:name="com.mintic.ciclo4.appgroup13.DetailFragment"
+        android:label="@string/menu_detail"
+        tools:layout="@layout/fragment_detail" />
+    <fragment
+        android:id="@+id/nav_new_task"
+        android:name="com.mintic.ciclo4.appgroup13.NewTaskFragment"
+        android:label="@string/menu_new_task"
+        tools:layout="@layout/fragment_new_task" />
 </navigation>
