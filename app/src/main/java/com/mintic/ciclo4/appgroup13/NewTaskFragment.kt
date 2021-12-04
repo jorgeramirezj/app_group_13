@@ -1,11 +1,18 @@
 package com.mintic.ciclo4.appgroup13
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import androidx.navigation.Navigation
+import androidx.room.*
+import com.mintic.ciclo4.appgroup13.room_database.ToDoDatabase
+import com.mintic.ciclo4.appgroup13.room_database.entity.ToDo
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -53,21 +60,34 @@ class NewTaskFragment : Fragment() {
 
         // Otra forma de cargar datos en el spinner, recordar que se modifico el toString de la clase "Task"
         var tareas : ArrayList<Task> = ArrayList()
-        tareas.add(Task(resources.getString(R.string.txt_tarea_1), resources.getString(R.string.txt_hora_1), resources.getString(R.string.txt_lugar_1)))
-        tareas.add(Task(resources.getString(R.string.txt_tarea_2), resources.getString(R.string.txt_hora_2), resources.getString(R.string.txt_lugar_2)))
-        tareas.add(Task(resources.getString(R.string.txt_tarea_3), resources.getString(R.string.txt_hora_3), resources.getString(R.string.txt_lugar_3)))
+        tareas.add(Task(1, resources.getString(R.string.txt_to_do_exercise), "6:00", resources.getString(R.string.txt_gym)))
+        tareas.add(Task(2, resources.getString(R.string.txt_study), "8:00", resources.getString(R.string.txt_university)))
+        tareas.add(Task(3, resources.getString(R.string.txt_shopping), "14:00", resources.getString(R.string.txt_supermarket)))
 
         val taskAdapter = ArrayAdapter(
             context?.applicationContext!!,
             android.R.layout.simple_spinner_item,
-            tareas)
+            tareas) // aqui se modifica para ver la variable de "tareas" o "arregloTareas" => recordar que se modifico para ver en la clase "Task"
         spiTask.adapter = taskAdapter
         btnNewTask.setOnClickListener{
+            // Muestra lo que un spinner tiene cargado
+            /*Toast.makeText(context?.applicationContext!!, spiTask.selectedItem.toString(), Toast.LENGTH_SHORT).show()*/
+            // Con variable casteada, podemos seleccionar cualquier dato que esté enviando, recordar el override toString de la clase "Task"
             var tareaSeleccionada : Task = spiTask.selectedItem as Task
-            // Esta forma muestra lo que un spinner tiene cargado
-            //Toast.makeText(context?.applicationContext, spiTask.selectedItem.toString(), Toast.LENGTH_SHORT).show()
-            // Esta otra forma, con variable casteada, podemos seleccionar cualquier dato que esté enviando, recordar el override toString de la clase "Task"
-            Toast.makeText(context?.applicationContext, tareaSeleccionada.place, Toast.LENGTH_SHORT).show()
+            /*Toast.makeText(context?.applicationContext!!, tareaSeleccionada.task, Toast.LENGTH_SHORT).show()*/
+            // ROOM
+            val room: ToDoDatabase = Room.databaseBuilder(context?.applicationContext!!, ToDoDatabase::class.java, "ToDoDatabase")
+                .build()
+            val task = ToDo(0, tareaSeleccionada.task.toString(), edtTime.text.toString(), edtPlace.text.toString())
+            val todoDao = room.todoDao()
+            // COROUTINE
+            runBlocking {
+                launch {
+                    var result = todoDao.insertTask(task)
+                    Toast.makeText(context?.applicationContext!!, "" + result, Toast.LENGTH_LONG).show()
+                }
+            }
+            Navigation.findNavController(view).navigate(R.id.nav_todo_recycler)
         }
     }
 

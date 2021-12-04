@@ -8,6 +8,11 @@ import android.view.ViewGroup
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.RecyclerView
+import androidx.room.Database
+import androidx.room.Room
+import com.mintic.ciclo4.appgroup13.room_database.ToDoDatabase
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -44,14 +49,27 @@ class RecyclerToDoFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val recyclerToDoList : RecyclerView = view.findViewById(R.id.recyclerToDoList)
         val datos : ArrayList<Task> = ArrayList()
-        datos.add(Task(resources.getString(R.string.txt_tarea_1),resources.getString(R.string.txt_hora_1),resources.getString(R.string.txt_lugar_1)))
-        datos.add(Task(resources.getString(R.string.txt_tarea_2),resources.getString(R.string.txt_hora_2),resources.getString(R.string.txt_lugar_2)))
-        datos.add(Task(resources.getString(R.string.txt_tarea_3),resources.getString(R.string.txt_hora_3),resources.getString(R.string.txt_lugar_3)))
+        // ROOM
+        val room : ToDoDatabase = Room.databaseBuilder(context?.applicationContext!!, ToDoDatabase::class.java, "ToDoDatabase")
+            .build()
+        var todoDao = room.todoDao()
+        runBlocking {
+            launch {
+                var result = todoDao.getAllTasks()
+                for (todo in result){
+                    datos.add(Task(todo.id, todo.title, todo.time, todo.place))
+                }
+            }
+        }
+        /*datos.add(Task(1, resources.getString(R.string.txt_tarea_1),resources.getString(R.string.txt_hora_1),resources.getString(R.string.txt_lugar_1)))
+        datos.add(Task(2, resources.getString(R.string.txt_tarea_2),resources.getString(R.string.txt_hora_2),resources.getString(R.string.txt_lugar_2)))
+        datos.add(Task(3, resources.getString(R.string.txt_tarea_3),resources.getString(R.string.txt_hora_3),resources.getString(R.string.txt_lugar_3)))*/
         var taskAdapter = TaskAdapter(datos){
             val datos = Bundle()
-            datos.putString("tarea", it.task)
+            datos.putInt("id", it.id)
+            /*datos.putString("tarea", it.task)
             datos.putString("hora", it.time)
-            datos.putString("lugar", it.place)
+            datos.putString("lugar", it.place)*/
             Navigation.findNavController(view).navigate(R.id.nav_detail, datos)
         }
         recyclerToDoList.setHasFixedSize(true)

@@ -70,6 +70,10 @@
     <string name="txt_study">Study</string>
     <string name="txt_shopping">Shopping</string>
     <string name="txt_to_do_exercise">To do exercise</string>
+    <string name="txt_gym">Gym</string>
+    <string name="txt_supermarket">Supermarket</string>
+    <string name="txt_university">University</string>
+
 
     <string-array name="activitys">
         <item>Select</item>
